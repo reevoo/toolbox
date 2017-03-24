@@ -15,5 +15,11 @@ A useful set of tools that we can use for debugging etc with the [toolbox](https
 
 ## Usage
 
-* Set `TOOLBOX_DOCKER_IMAGE=quay.io/reevoo/toolbox` in `/etc/default/toolbox` (systemwide) or `~/.toolboxrc` (your user)
+* edit `/etc/default/toolbox` (systemwide) or `~/.toolboxrc` (for your user) to include:
+
+```
+TOOLBOX_DOCKER_IMAGE=quay.io/reevoo/toolbox
+TOOLBOX_DOCKER_TAG=latest
+```
+
 * run `toolbox`
