@@ -10,4 +10,4 @@ RUN \
   && pip install awscli \
   && apk del --no-cache py-pip
 
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]
