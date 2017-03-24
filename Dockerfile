@@ -7,6 +7,7 @@ RUN \
     iputils \
     py-pip \
     python \
+    tzdata \
   && pip install awscli \
   && apk del --no-cache py-pip
 
