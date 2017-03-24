@@ -4,6 +4,7 @@ RUN \
   apk --no-cache add \
     bash \
     bind-tools \
+    htop \
     iputils \
     py-pip \
     python \
