@@ -9,6 +9,7 @@ A useful set of tools that we can use for debugging etc with the [toolbox](https
 * awscli
 * bash
 * bind-tools (nslookup, host, dig, delv, etc)
+* etcd (for etcdctl)
 * htop
 * iputils (ping and friends)
 

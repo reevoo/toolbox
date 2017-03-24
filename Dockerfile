@@ -1,15 +1,15 @@
-FROM alpine:3.5
+FROM alpine:edge
 
-RUN \
-  apk --no-cache add \
+RUN mkdir -p /etc/apk/repositories.d \
+  && echo http://dl-cdn.alpinelinux.org/alpine/edge/testing > /etc/apk/repositories.d/testing.list
+
+RUN apk --no-cache add \
+    awscli \
     bash \
     bind-tools \
+    etcd \
     htop \
     iputils \
-    py-pip \
-    python \
-    tzdata \
-  && pip install awscli \
-  && apk del --no-cache py-pip
+    tzdata
 
 CMD ["/bin/bash"]
