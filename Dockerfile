@@ -7,7 +7,7 @@ RUN apk --no-cache add \
     bash \
     bind-tools \
     curl \
-    etcd \
+    etcd-ctl \
     htop \
     iputils \
     py2-pip \
