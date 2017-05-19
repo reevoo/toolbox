@@ -10,7 +10,7 @@ A useful set of tools that we can use for debugging etc with the [toolbox](https
 * bash
 * bind-tools (nslookup, host, dig, delv, etc)
 * curl
-* etcd (for etcdctl)
+* etcdctl
 * htop
 * kubectl
 * iputils (ping and friends)
