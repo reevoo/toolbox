@@ -2,7 +2,7 @@
 
 [![Docker Repository on Quay](https://quay.io/repository/reevoo/toolbox/status "Docker Repository on Quay")](https://quay.io/repository/reevoo/toolbox)
 
-A useful set of tools that we can use for debugging etc with the [toolbox](https://github.com/coreos/toolbox) script on coreos.
+A useful set of tools that can be used with the [toolbox](https://github.com/coreos/toolbox) script on [Container Linux](https://coreos.com/os/docs/latest/).
 
 ## Stuff Installed
 
