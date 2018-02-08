@@ -14,6 +14,7 @@ A useful set of tools that can be used with the [toolbox](https://github.com/cor
 * htop
 * kubectl
 * iputils (ping and friends)
+* psql (RDS SSL certificate included)
 
 ## Usage
 
