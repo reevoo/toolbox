@@ -6,6 +6,7 @@ RUN apk --no-cache add \
     curl \
     htop \
     iputils \
+    postgresql-client \
     py2-pip \
     tzdata
 
@@ -20,5 +21,8 @@ RUN apk --no-cache add tar \
   && curl -sL $(curl -s https://api.github.com/repos/coreos/etcd/releases/latest | awk -F '"' '/browser_download_url.*linux-amd64.tar.gz"$/{ print $4 }') | tar xzv --strip-components=1 --wildcards -C /usr/local/bin/ "*/etcdctl" \
   && chmod +x /usr/local/bin/etcdctl \
   && apk del tar
+
+RUN mkdir -p /root/.postgresql/ \
+  && curl -s https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem -o /root/.postgresql/root.crt
 
 CMD ["/bin/bash"]
